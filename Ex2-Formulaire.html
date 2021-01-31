@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;padding: 5px;width: 500px;
+        }
+        input {height: 30px;}
+        select{height: 30px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <label for="">Nom :</label><input type="text" id="nom" placeholder="Nom"><br><br>
+
+
+        <label for="">Pays</label> 
+
+        <select name="" id="pays" >
+            <option value="">select</option>
+            <option value="Morocco">morocco</option>
+            <option value="France">france</option>
+            <option value="USA">usa</option>
+        </select>
+        <input type="submit" value="valider" style="float: right;margin-top: 10px;" onclick="check()">
+      <div style="clear: both;"></div>
+      <p style="text-align: center;">  bienvenu ala de maroc</p>
+    </div>
+    <script>
+ function check(){
+     let s1 = document.querySelector('#nom').value;
+     let d1 = document.querySelector('#pays').value;
+    if(s1 == "")
+    {
+        alert("error nom !!")
+    }else if(d1 == ""){
+        alert("error pays !!")
+    }else{
+        alert("bienvenu" + " " + s1 +" "+"de" +" "+ d1);
+    }
+ }
+    </script>
+</body>
+</html>
