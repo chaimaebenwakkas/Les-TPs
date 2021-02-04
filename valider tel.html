@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <label> tel</label>
+    <input type ="text" id="t1"/>
+    <br/>
+    <input type ="button" value="valider" onclick=();/>
+    <div id="j1"> message   </div>
+</html>
+<head>
+    <title>Page Title</title>
+    <script>
+         var x=0;y=1
+         function verfier(){
+                            var t1=document.querySelector("#t1");
+                            var d1=Document.querySelector("#d1"); 
+                            if(t1.value==" ")
+                               {
+                                   d1.innerHTML="telephone vide"<br/>
+                                   veuilez replir;
+                                   return ;
+                               }
+                               var rg=/^[0-9]{10}$/g
+                               //new RgExp("module","s")
+                               if(rg.text(t1.value)==false){
+                                                            d1.innerHTML="donner des chiffres";
+                                                            return;
+                               }
+                               var rg=new rq Exp("^(067/068)[0-9]{7}$","g");
+                               if(rg.test(t1.value)==false)
+                                  {
+                                    d1.innerHTML="le telephon doit commercu par 067 OU 068"<br/>;
+                                    d1.className="c1"; 
+                                    .c1{color:yello fon size:20%}
+                                    return;
+                                  }
+                                  d1.innerHTML="felecitation le telephon est connect";
+                           }
+    </script>
+</head>
+    
